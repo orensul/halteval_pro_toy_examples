@@ -1,0 +1,10 @@
+void id99(){
+  int i = 0;
+
+retry:
+  while (i < 10) {
+    id56(i == 5)
+      goto retry;
+    i++;
+  }
+}
