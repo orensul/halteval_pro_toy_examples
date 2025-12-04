@@ -1,0 +1,1 @@
+void fcall_by_ref(int* y) { (*y) = (*y) + 1; }

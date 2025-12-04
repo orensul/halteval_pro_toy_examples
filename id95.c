@@ -1,0 +1,1 @@
+int compute_increment(int k) { return (k % 2 ? 1 : 0); }

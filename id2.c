@@ -1,0 +1,1 @@
+void one_liner_ok(int x) { x++; }

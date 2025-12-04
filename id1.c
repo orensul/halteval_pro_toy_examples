@@ -1,0 +1,1 @@
+void empty_function_ok() { return; }
