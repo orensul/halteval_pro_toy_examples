@@ -1,4 +1,4 @@
-void simple_goto_bad(int y) {
+void id4(int y){
 re:
   y++;
   goto re;

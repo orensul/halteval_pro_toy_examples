@@ -1,5 +1,5 @@
-void loop_call_ok(int y) {
+void id14(int y){
   while (y == 100)
-    fcall_by_ref(&y);
+    id13(&y);
   return;
 }

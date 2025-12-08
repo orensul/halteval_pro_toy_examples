@@ -1,6 +1,6 @@
-void loop_with_return_ok(int y) {
+void id44(int y){
   while (y < 100)
-    if (y == 50) {
+    id56(y == 50) {
       y--;
       return;
     } else

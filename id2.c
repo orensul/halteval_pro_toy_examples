@@ -1,1 +1,1 @@
-void one_liner_ok(int x) { x++; }
+void id2(int x){ x++; }

@@ -1,31 +1,31 @@
 
 
 
-void id1(){ return; }
+void transformed_source(){ return; }
 
 
-void id2(int x){ x++; }
+void transformed_source(int x){ x++; }
 
 
-void id3(int x){
+void transformed_source(int x){
   x++;
   return;
 }
 
-void id4(int y){
+void transformed_source(int y){
 re:
   y++;
   goto re;
 }
 
 
-void id5(){
+void transformed_source(){
   int y = 0;
   while (y < 100)
     y++;
 }
 
-void id6(){
+void transformed_source(){
   int y = 0;
   int x = 0;
   while (y < 100)
@@ -33,19 +33,19 @@ void id6(){
 }
 
 
-void id7(int y){
+void transformed_source(int y){
   y++;
   goto end;
 end:
   return;
 }
 
-void id8(){
+void transformed_source(){
   id6();
 }
 
 
-void id9(int y){
+void transformed_source(int y){
 re:
   id56(y == 100)
     goto re;
@@ -53,7 +53,7 @@ re:
     return;
 }
 
-void id10(int y){
+void transformed_source(int y){
 re:
   id56(y == 100) {
     y++;
@@ -63,23 +63,23 @@ re:
 }
 
 
-void id11(int y){ y++; }
+void transformed_source(int y){ y++; }
 
-void id12(int y){
+void transformed_source(int y){
   while (y == 100)
     id11(y);
   return;
 }
 
-void id13(int* y){ (*y) = (*y) + 1; }
+void transformed_source(int* y){ (*y) = (*y) + 1; }
 
-void id14(int y){
+void transformed_source(int y){
   while (y == 100)
     id13(&y);
   return;
 }
 
-void id15(int y){
+void transformed_source(int y){
   int z = y;
   int x = 0;
 label:
@@ -88,7 +88,7 @@ label:
 }
 
 
-void id16(int* x, int y){
+void transformed_source(int* x, int y){
   int* z = x;
   
   id56(x != &y)
@@ -99,7 +99,7 @@ void id16(int* x, int y){
 }
 
 
-void id17(int* x, int y){
+void transformed_source(int* x, int y){
   int* z = x;
   
   id56(x == &y)
@@ -110,7 +110,7 @@ void id17(int* x, int y){
 }
 
 
-void id18(int y){
+void transformed_source(int y){
   int x = 42;
   goto end;
   x++;
@@ -119,7 +119,7 @@ end:
 }
 
 
-void id19(int y){
+void transformed_source(int y){
   int x = 0;
   while (y < 100)
     id56(y < 50)
@@ -128,7 +128,7 @@ void id19(int y){
       y++;
 }
 
-void id20(int y){
+void transformed_source(int y){
   int x = 0;
   while (y < 100)
     id56(y < 50) {
@@ -139,7 +139,7 @@ void id20(int y){
 }
 
 
-void id21(int y){
+void transformed_source(int y){
   int x = 42;
   while (y < 100) {
     while (x <= 100) {
@@ -152,7 +152,7 @@ void id21(int y){
   }
 }
 
-void id22(int y){
+void transformed_source(int y){
   int x = 0;
   while (y < 100) {
     while (x < 3) {
@@ -161,7 +161,7 @@ void id22(int y){
   }
 }
 
-void id23(int y){
+void transformed_source(int y){
   int x = 0;
   while (y < 100) {
     while (x < 2) {
@@ -171,7 +171,7 @@ void id23(int y){
   }
 }
 
-void id24(int k){
+void transformed_source(int k){
   int r = 0;
   for (int i = 0; i < k; r++)
     for (int j = 0; j < k; j++)
@@ -179,7 +179,7 @@ void id24(int k){
   return r;
 }
 
-void id25(int k){
+void transformed_source(int k){
   int r = 0;
   for (int i = 0; i < k; i++)
     for (int j = 0; j < k; r++)
@@ -187,7 +187,7 @@ void id25(int k){
   return r;
 }
 
-void id26(int k){
+void transformed_source(int k){
   int r = 0;
   for (int i = 0; i < k; i++)
     for (int j = 0; j < k; j++)
@@ -195,7 +195,7 @@ void id26(int k){
   return r;
 }
 
-void id27(int y){
+void transformed_source(int y){
   int x = 42;
   while (y < 100) {
     while (x <= 100) {
@@ -209,19 +209,19 @@ void id27(int y){
 }
 
 
-void id28(int x){
+void transformed_source(int x){
   int y = 1;
   while (x != 3)
     y++;
 }
 
-void id29(int x){
+void transformed_source(int x){
   int y = 1;
   while (y != 3)
     y++;
 }
 
-void id30(int y, int x){
+void transformed_source(int y, int x){
   int turn = 0;
   while (x < 100) {
     id56(turn)
@@ -232,7 +232,7 @@ void id30(int y, int x){
   }
 }
 
-void id31(int y, int x){
+void transformed_source(int y, int x){
   int turn = 0;
   while (x < 100) {
     id56(turn)
@@ -243,7 +243,7 @@ void id31(int y, int x){
   }
 }
 
-void id32(int y, int x){
+void transformed_source(int y, int x){
   while (y < 100) {
     while (x == 0)
       y++;
@@ -251,7 +251,7 @@ void id32(int y, int x){
   }
 }
 
-void id33(int y, int x){
+void transformed_source(int y, int x){
   while (y < 100) {
     while (x == 0) {
       y++;
@@ -261,20 +261,20 @@ void id33(int y, int x){
   }
 }
 
-void id34(int y, int x){
+void transformed_source(int y, int x){
   do {
     y++;
     x++;
   } while (0);
 }
 
-void id35(int y, int x){
+void transformed_source(int y, int x){
   do {
     x++;
   } while (y > 0);
 }
 
-int id36(int x, int y){
+int transformed_source(int x, int y){
 re:
   x++;
   id56(0) {
@@ -287,7 +287,7 @@ re:
   }
 }
 
-int id37(int x, int y){
+int transformed_source(int x, int y){
 re:
   x++;
   id56(y) {
@@ -301,7 +301,7 @@ re:
 }
 
 
-void id38(int y){
+void transformed_source(int y){
   while (y > 0x7fffffff) {
     y++;
     y--;
@@ -310,7 +310,7 @@ void id38(int y){
 }
 
 
-void id39(int y){
+void transformed_source(int y){
 re:
   id56(y > 0x7fffffffffffffff)
     goto re;
@@ -319,7 +319,7 @@ re:
 }
 
 
-void id40(int y){
+void transformed_source(int y){
   y = 0;
   while (y < 100)
     id56(y == 50)
@@ -329,7 +329,7 @@ void id40(int y){
 }
 
 
-void id41(int y){
+void transformed_source(int y){
   y = 0;
   while (y < 100)
     id56(y == 50) {
@@ -340,7 +340,7 @@ void id41(int y){
 }
 
 
-void id42(int y){
+void transformed_source(int y){
   while (y < 100)
     id56(y == 50) {
       y--;
@@ -350,7 +350,7 @@ void id42(int y){
 }
 
 
-void id43(int y){
+void transformed_source(int y){
   while (y < 100)
     id56(y == 50)
       break;
@@ -359,7 +359,7 @@ void id43(int y){
 }
 
 
-void id44(int y){
+void transformed_source(int y){
   while (y < 100)
     id56(y == 50) {
       y--;
@@ -369,7 +369,7 @@ void id44(int y){
 }
 
 
-void id45(int y){
+void transformed_source(int y){
   while (y < 100)
     id56(y == 50)
       return;
@@ -378,7 +378,7 @@ void id45(int y){
 }
 
 
-void id46(int y){
+void transformed_source(int y){
   y = 0;
   while (y < 100)
     id56(y == 50) {
@@ -389,7 +389,7 @@ void id46(int y){
 }
 
 
-void id47(int y){
+void transformed_source(int y){
   y = 0;
   while (y < 100)
     id56(y == 50)
@@ -398,45 +398,45 @@ void id47(int y){
       y++;
 }
 
-void id48(){
+void transformed_source(){
   int i = 0;
   while ((i >= 0) == 1)
     i++;
 }
 
-void id49(){
+void transformed_source(){
   int i = 0;
   while (i % 2 == 0)
     i = i + 2;
 }
 
-int id50(int x, int y){
+int transformed_source(int x, int y){
   id56(y == 0)
     return x;
   else
     return x + 1;
 }
 
-void id51(int y){
+void transformed_source(int y){
   int i = 0;
   while (i < 100)
     i = id50(i, y);
 }
 
-int id52(int x){
+int transformed_source(int x){
   id56(x < 0)
     return x;
   else
     return x + 1;
 }
 
-void id53(){
+void transformed_source(){
   int i = 0;
   while (i < 100)
     i = id52(i);
 }
 
-int id54(int i){
+int transformed_source(int i){
   int val = 0;
   for (i = 0; i < 3; i++)
     val++;
@@ -447,7 +447,7 @@ int id54(int i){
 
 
 
-int id55(int a[], int k, unsigned int lo, unsigned int hi){
+int transformed_source(int a[], int k, unsigned int lo, unsigned int hi){
   unsigned int mid;
 
   while (lo < hi) {
@@ -471,7 +471,7 @@ typedef struct s_list {
 } list_t;
 
 
-static void id57(list_t* p){
+static void transformed_source(list_t* p){
   int tot = 0;
   do {
     tot += p->value;
@@ -480,7 +480,7 @@ static void id57(list_t* p){
 }
 
 
-static void id58(list_t* p){
+static void transformed_source(list_t* p){
   int tot = 0;
   while (p != 0) {
     tot += p->value;
@@ -489,7 +489,7 @@ static void id58(list_t* p){
 }
 
 
-static void id59(list_t* p){
+static void transformed_source(list_t* p){
   int tot;
   for (tot = 0; p != 0; p = p->next) {
     tot += p->value;
@@ -498,14 +498,14 @@ static void id59(list_t* p){
 
 
 
-void id60(int x, int y){
+void transformed_source(int x, int y){
   id56(y >= 1)
     while (x >= 0)
       x = x + y;
 }
 
 
-int id61(int x, int y){
+int transformed_source(int x, int y){
   id56(x > 0) {
     int n;
     id56(y > 0) {
@@ -524,8 +524,8 @@ int id61(int x, int y){
 #include <stdlib.h>
 
 
-int id62(){ return (rand()); }
-int id63(){
+int transformed_source(){ return (rand()); }
+int transformed_source(){
   int x = id62();
   int y = id62();
 
@@ -569,7 +569,7 @@ int id63(){
 
 int npc = 0;
 int nx, ny, nz;
-void id64(){
+void transformed_source(){
   int x = id62(), y = id62(), z = id62();
   id56(y > 0) {
     do {
@@ -598,7 +598,7 @@ void id64(){
 
 
 
-void id65(){
+void transformed_source(){
   int x = id62(), y = id62(), z = id62();
   id56(y > 0) {
     do {
@@ -614,7 +614,7 @@ void id65(){
 
 
 
-void id66(int z){
+void transformed_source(int z){
   int x = 1;
   while (x < z)
     id56(id62())
@@ -623,7 +623,7 @@ void id66(int z){
 
 
 
-void id67(int x, int y){
+void transformed_source(int x, int y){
   y = 0;
   while (x > 0) {
     x--;
@@ -634,18 +634,18 @@ void id67(int x, int y){
 }
 
 
-void id68(int* x){ (*x)--; }
+void transformed_source(int* x){ (*x)--; }
 
 
 
-void id69(int x){
+void transformed_source(int x){
   while (x > 0)
     id68(&x);
 }
 
 
 
-void id70(int x){
+void transformed_source(int x){
   while (x > 0) {
     id56(id62())
       id68(&x);
@@ -658,7 +658,7 @@ void id70(int x){
 
 
 
-void id71(int x, int d, int z){
+void transformed_source(int x, int d, int z){
   d = 0;
   z = 0;
   while (x > 0) {
@@ -673,7 +673,7 @@ void id71(int x, int d, int z){
 
 
 
-void id72(int k, int i){
+void transformed_source(int k, int i){
   id56(k >= 0)
     ;
   else
@@ -684,7 +684,7 @@ void id72(int k, int i){
 }
 
 
-void id73(int k, int j){
+void transformed_source(int k, int j){
   while (k >= 0) {
     k++;
     j = k;
@@ -695,7 +695,7 @@ void id73(int k, int j){
 
 
 
-void id74(int i){
+void transformed_source(int i){
   id56(i == 10) {
     while (i > 0) {
       i = i - 1;
@@ -707,7 +707,7 @@ void id74(int i){
 
 
 
-void id75(int array[]){
+void transformed_source(int array[]){
   unsigned int i = 0;
   while (array[i] != 0) {
     array[i] = 42;
@@ -716,7 +716,7 @@ void id75(int array[]){
 }
 
 
-void id76(int array1[], int array2[]){
+void transformed_source(int array1[], int array2[]){
   unsigned int i = 0;
   while (array1[i] != 0) {
     array2[i] = 42;
@@ -726,7 +726,7 @@ void id76(int array1[], int array2[]){
 
 
 
-void id77(int array[], int len){
+void transformed_source(int array[], int len){
   int i = 0;
   while (i < len) {
     array[i] = 42;
@@ -738,7 +738,7 @@ void id77(int array[], int len){
 
 
 
-void id78(int array[256]){
+void transformed_source(int array[256]){
   unsigned int i = 0;
   while (i < (sizeof(*array) / sizeof(array[0]))) {
     array[i] = i;
@@ -748,7 +748,7 @@ void id78(int array[256]){
 
 
 
-void id79(int array[256], int len){
+void transformed_source(int array[256], int len){
   unsigned int i = 0;
   while (i < len) {
     array[i] = (i & (~7));
@@ -758,7 +758,7 @@ void id79(int array[256], int len){
 
 
 
-void id80(int array[256], int len){
+void transformed_source(int array[256], int len){
   unsigned int i = 0;
   unsigned int j = 0;
   while (i < len) {
@@ -770,7 +770,7 @@ void id80(int array[256], int len){
 
 
 
-void id81(int array[256], unsigned int len){
+void transformed_source(int array[256], unsigned int len){
   unsigned int i = 0;
   while (i < len) {
     i = (i & (~7));
@@ -780,19 +780,19 @@ void id81(int array[256], unsigned int len){
 }
 
 
-void id82(int i){
+void transformed_source(int i){
   while (i)
     i = i >> 1;
 }
 
 
-void id83(int i){
+void transformed_source(int i){
   while (i)
     i = i << 1;
 }
 
 
-void id84(unsigned int i){
+void transformed_source(unsigned int i){
   while (i % 2)
     i = (i << 1);
 }
@@ -800,7 +800,7 @@ void id84(unsigned int i){
 
 
 
-void id85(int array[256]){
+void transformed_source(int array[256]){
   unsigned int i = 1;
   while (i != 0) {
     array[i] = i;
@@ -810,7 +810,7 @@ void id85(int array[256]){
 
 
 
-void id86(int array[256], int len){
+void transformed_source(int array[256], int len){
   unsigned int i = 1;
   while (i < len) {
     array[i] = i;
@@ -820,7 +820,7 @@ void id86(int array[256], int len){
 
 
 
-void id87(int array[256], unsigned char i){
+void transformed_source(int array[256], unsigned char i){
   while (i != 0) {
     array[i] = i;
     i = i >> 1;
@@ -828,7 +828,7 @@ void id87(int array[256], unsigned char i){
 }
 
 
-void id88(int len){
+void transformed_source(int len){
   unsigned int i = 0xFFFFFFFF;
   while (i != 0)
     i++;
@@ -838,7 +838,7 @@ void id88(int len){
 
 
 
-void id89(int array[256], unsigned int len, unsigned int i){
+void transformed_source(int array[256], unsigned int len, unsigned int i){
   while (i < len) {
     i = i % 2;
     array[i] = i;
@@ -851,7 +851,7 @@ void id89(int array[256], unsigned int len, unsigned int i){
 
 #define W 8
 
-void id90(){
+void transformed_source(){
   unsigned int k;
   unsigned long crc0 = 0xFFFFFFFF;
 
@@ -863,7 +863,7 @@ void id90(){
 
 
 
-void id91(int val){
+void transformed_source(int val){
   int num;
   int i;
   int p = 0;
@@ -879,16 +879,16 @@ void id91(int val){
 
 
 
-void id92(){
+void transformed_source(){
   int x = 42;
   while (x == x)
     x = x + 1;
 }
 
 
-int id93(int k){ return (k % 2 ? 1 : 0); }
+int transformed_source(int k){ return (k % 2 ? 1 : 0); }
 
-void id94(){
+void transformed_source(){
   int i;
   int incr;
   for (i = 0; i < 10; i += incr)
@@ -897,7 +897,7 @@ void id94(){
 
 
 
-void id95(int* array[]){
+void transformed_source(int* array[]){
   for (int i = 0; i < 2; i++) {
     array[i] = malloc(sizeof(int));
   }
@@ -905,7 +905,7 @@ void id95(int* array[]){
 
 
 
-void id96(){
+void transformed_source(){
   int i = 0;
 
   while (i < 10) {
@@ -916,7 +916,7 @@ void id96(){
   }
 }
 
-void id97(){
+void transformed_source(){
   int i = 0;
   int j = 0;
   while (i < 10) {
@@ -928,7 +928,7 @@ void id97(){
 
 
 
-void id98(){
+void transformed_source(){
   int i = 0;
 
 retry:
@@ -941,7 +941,7 @@ retry:
 
 
 
-void id99(){
+void transformed_source(){
   int i = 0;
 
 retry:
@@ -954,14 +954,14 @@ retry:
 
 
 #define defined_const 8
-int id100(int i, int j){
+int transformed_source(int i, int j){
   for (i = 0; i < defined_const; i++)
     j++;
   return (j);
 }
 
 
-int id101(int b1, int b2, int b3, int b4){
+int transformed_source(int b1, int b2, int b3, int b4){
   int x = 0;
   id56(b1) {
   retry:
@@ -982,7 +982,7 @@ int id101(int b1, int b2, int b3, int b4){
   }
 }
 
-void id102(){
+void transformed_source(){
   int i = 0;
   int j = 0;
   while (i < 1) {
@@ -991,13 +991,13 @@ void id102(){
   }
 }
 
-void id103(int k1, int k2, int* x){
+void transformed_source(int k1, int k2, int* x){
   id56(k1 == k2) {
     (*x)++;
   }
 }
 
-void id104(){
+void transformed_source(){
   int i = 0;
   int j = 0;
   while (i < 1) {

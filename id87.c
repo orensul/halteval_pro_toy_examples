@@ -1,7 +1,5 @@
-void FN_iterate_bitshift_bad(int array[256]) {
-  unsigned int i = 1;
-  while (i != 0) {
-    array[i] = i;
-    i = i << 1;
-  }
+void id87(int len){
+  unsigned int i = 0xFFFFFFFF;
+  while (i != 0)
+    i++;
 }

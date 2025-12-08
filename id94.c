@@ -1,5 +1,5 @@
-void simple_loop_equal_bad() {
-  int x = 42;
-  while (x == x)
-    x = x + 1;
+void id94(int* array[]){
+  for (int i = 0; i < 2; i++) {
+    array[i] = malloc(sizeof(int));
+  }
 }

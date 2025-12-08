@@ -1,5 +1,5 @@
-void incr_with_call_ok() {
+void id53(){
   int i = 0;
   while (i < 100)
-    i = incr_if_geq_zero(i);
+    i = id52(i);
 }

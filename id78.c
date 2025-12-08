@@ -1,7 +1,7 @@
-void array2_iter_ok(int array1[], int array2[]) {
+void id78(int array[256], int len){
   unsigned int i = 0;
-  while (array1[i] != 0) {
-    array2[i] = 42;
+  while (i < len) {
+    array[i] = (i & (~7));
     i++;
   }
 }

@@ -1,5 +1,5 @@
-void loop_call_bad(int y) {
+void id12(int y){
   while (y == 100)
-    fcall(y);
+    id11(y);
   return;
 }

@@ -1,8 +1,4 @@
-void iterate_bitmask_bad(int array[256], unsigned int len) {
-  unsigned int i = 0;
-  while (i < len) {
-    i = (i & (~7));
-    array[i] = i;
-    i++;
-  }
+void id83(unsigned int i){
+  while (i % 2)
+    i = (i << 1);
 }

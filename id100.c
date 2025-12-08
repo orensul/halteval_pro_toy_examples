@@ -1,10 +1,20 @@
-void FN_goto_cross_loop_stop_at_6_bad() {
-  int i = 0;
-
-retry:
-  while (i < 10) {
-    if (i == 6)
+int id100(int b1, int b2, int b3, int b4){
+  int x = 0;
+  id56(b1) {
+  retry:
+    id56(b2) {
+      x++;
+    }
+    id56(b2) {
+      x++;
+    }
+  }
+  id56(b3) {
+    id56(b2) {
+      x++;
+    }
+    id56(b4) {
       goto retry;
-    i++;
+    }
   }
 }

@@ -1,9 +1,9 @@
-void FN_goto_in_loop_bad() {
+void id98(){
   int i = 0;
 
+retry:
   while (i < 10) {
-  retry:
-    if (i == 5)
+    id56(i == 5)
       goto retry;
     i++;
   }

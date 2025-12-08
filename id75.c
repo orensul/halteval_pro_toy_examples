@@ -1,8 +1,7 @@
-void FN_nestedloop2_chen14_bad(int k, int j) {
-  while (k >= 0) {
-    k++;
-    j = k;
-    while (j >= 1)
-      j--;
+void id75(int array1[], int array2[]){
+  unsigned int i = 0;
+  while (array1[i] != 0) {
+    array2[i] = 42;
+    i++;
   }
 }

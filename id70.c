@@ -1,4 +1,8 @@
-void interproc_terminating_harris10_ok(int x) {
-  while (x > 0)
-    foo(&x);
+void id70(int x, int d, int z){
+  d = 0;
+  z = 0;
+  while (x > 0) {
+    z++;
+    x = x - d;
+  }
 }

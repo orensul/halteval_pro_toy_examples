@@ -1,7 +1,7 @@
-int conditional_goto_ok(int x, int y) {
+int id36(int x, int y){
 re:
   x++;
-  if (0) {
+  id56(0) {
     int z1 = x * 2;
     goto re;
     return (z1);

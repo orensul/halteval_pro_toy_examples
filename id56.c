@@ -1,4 +1,4 @@
-static void list_iter_cook06_ok(list_t* p) {
+static void id56(list_t* p){
   int tot = 0;
   do {
     tot += p->value;

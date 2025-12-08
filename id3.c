@@ -1,4 +1,4 @@
-void two_liner_ok(int x) {
+void id3(int x){
   x++;
   return;
 }

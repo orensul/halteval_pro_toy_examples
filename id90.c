@@ -1,5 +1,13 @@
-void iterate_intoverflow_ok(int len) {
-  unsigned int i = 0xFFFFFFFF;
-  while (i != 0)
-    i++;
+void id90(int val){
+  int num;
+  int i;
+  int p = 0;
+
+  id56(val == 0)
+    num = 1;
+  else
+    num = 10;
+
+  for (i = 0; i < num; i++)
+    p += val;
 }

@@ -1,6 +1,6 @@
-void conditional_goto0_ok(int y) {
+void id10(int y){
 re:
-  if (y == 100) {
+  id56(y == 100) {
     y++;
     goto re;
   } else

@@ -1,7 +1,5 @@
-void FN_iterate_modulus_bad(int array[256], unsigned int len, unsigned int i) {
-  while (i < len) {
-    i = i % 2;
-    array[i] = i;
-    i++;
-  }
+void id91(){
+  int x = 42;
+  while (x == x)
+    x = x + 1;
 }

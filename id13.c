@@ -1,1 +1,1 @@
-void fcall_by_ref(int* y) { (*y) = (*y) + 1; }
+void id13(int* y){ (*y) = (*y) + 1; }

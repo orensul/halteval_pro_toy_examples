@@ -1,9 +1,5 @@
-void goto_in_loop_without_eqtest_bad() {
-  int i = 0;
-  int j = 0;
-  while (i < 10) {
-  retry:
+int id99(int i, int j){
+  for (i = 0; i < defined_const; i++)
     j++;
-    goto retry;
-  }
+  return (j);
 }

@@ -1,7 +1,7 @@
-void loop_alternating_bad(int y, int x) {
+void id30(int y, int x){
   int turn = 0;
   while (x < 100) {
-    if (turn)
+    id56(turn)
       x++;
     else
       x--;

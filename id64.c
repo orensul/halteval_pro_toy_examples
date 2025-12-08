@@ -1,20 +1,8 @@
-void benchmark_cook06_ok() {
-  int x = nondet(), y = nondet(), z = nondet();
-  if (y > 0) {
+void id64(){
+  int x = id62(), y = id62(), z = id62();
+  id56(y > 0) {
     do {
-      if (npc == 5) {
-        if (!((y < z && z <= nz) || (x < y && x >= nx) || 0))
-          ;
-      }
-      if (npc == 0) {
-        if (nondet()) {
-          nx = x;
-          ny = y;
-          nz = z;
-          npc = 5;
-        }
-      }
-      if (nondet()) {
+      id56(id62()) {
         x = x + y;
       } else {
         z = x - y;

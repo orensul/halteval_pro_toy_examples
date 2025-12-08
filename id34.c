@@ -1,4 +1,4 @@
-void simple_dowhile_ok(int y, int x) {
+void id34(int y, int x){
   do {
     y++;
     x++;

@@ -1,7 +1,7 @@
-void array_iter_ok(int array[]) {
+void id77(int array[256]){
   unsigned int i = 0;
-  while (array[i] != 0) {
-    array[i] = 42;
+  while (i < (sizeof(*array) / sizeof(array[0]))) {
+    array[i] = i;
     i++;
   }
 }

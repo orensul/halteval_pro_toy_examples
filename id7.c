@@ -1,4 +1,4 @@
-void simple_goto_ok(int y) {
+void id7(int y){
   y++;
   goto end;
 end:

@@ -1,9 +1,7 @@
-void nondet_nonterminate_chen14_bad(int k, int i) {
-  if (k >= 0)
-    ;
-  else
-    i = -1;
-  while (i >= 0)
-    i = nondet();
-  i = 2;
+void id74(int array[]){
+  unsigned int i = 0;
+  while (array[i] != 0) {
+    array[i] = 42;
+    i++;
+  }
 }

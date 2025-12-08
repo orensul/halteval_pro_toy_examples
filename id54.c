@@ -1,4 +1,4 @@
-int loop_repeated_ok(int i) {
+int id54(int i){
   int val = 0;
   for (i = 0; i < 3; i++)
     val++;

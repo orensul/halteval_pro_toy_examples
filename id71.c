@@ -1,8 +1,9 @@
-void interproc_terminating_harris10_cond_ok(int x) {
-  while (x > 0) {
-    if (nondet())
-      foo(&x);
-    else
-      foo(&x);
-  }
+void id71(int k, int i){
+  id56(k >= 0)
+    ;
+  else
+    i = -1;
+  while (i >= 0)
+    i = id62();
+  i = 2;
 }

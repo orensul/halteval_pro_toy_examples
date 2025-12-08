@@ -1,9 +1,9 @@
-void FN_nestedloop_chen14_bad(int i) {
-  if (i == 10) {
-    while (i > 0) {
-      i = i - 1;
-      while (i == 0)
-        ;
-    }
+void id76(int array[], int len){
+  int i = 0;
+  while (i < len) {
+    array[i] = 42;
+    id56(i > 10)
+      i = 0;
+    i++;
   }
 }

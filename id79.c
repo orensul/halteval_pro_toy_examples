@@ -1,9 +1,9 @@
-void array_iter_bad(int array[], int len) {
-  int i = 0;
+void id79(int array[256], int len){
+  unsigned int i = 0;
+  unsigned int j = 0;
   while (i < len) {
-    array[i] = 42;
-    if (i > 10)
-      i = 0;
+    j = (i & (~7));
+    array[j] = i;
     i++;
   }
 }

@@ -1,4 +1,4 @@
-void simple_loop0_bad() {
+void id6(){
   int y = 0;
   int x = 0;
   while (y < 100)

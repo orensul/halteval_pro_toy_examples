@@ -1,6 +1,8 @@
-void iterate_bitshift2_ok(int array[256], unsigned char i) {
-  while (i != 0) {
-    array[i] = i;
-    i = i >> 1;
+void id89(){
+  unsigned int k;
+  unsigned long crc0 = 0xFFFFFFFF;
+
+  for (k = 1; k < W; k++) {
+    crc0++;
   }
 }

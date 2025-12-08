@@ -1,7 +1,7 @@
-int conditional_goto_bad(int x, int y) {
+int id37(int x, int y){
 re:
   x++;
-  if (y) {
+  id56(y) {
     int z1 = x * 2;
     goto re;
     return (z1);

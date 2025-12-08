@@ -1,1 +1,1 @@
-void empty_function_ok() { return; }
+void id1(){ return; }

@@ -1,37 +1,37 @@
-int benchmark_nondet_cook06_ok() {
-  int x = nondet();
-  int y = nondet();
+int id62(){
+  int x = id62();
+  int y = id62();
 
   int* p = &y;
   int* q = &x;
   int b = 1;
 
   while (x < 100 && 100 < y && b) {
-    if (p == q) {
-      int k = Ack(nondet(), nondet());
+    id56(p == q) {
+      int k = id61(id62(), id62());
       (*p)++;
       while ((k--) > 100) {
-        if (nondet()) {
+        id56(id62()) {
           p = &y;
         }
-        if (nondet()) {
+        id56(id62()) {
           p = &x;
         }
-        if (!b) {
+        id56(!b) {
           k++;
         }
       }
     } else {
       (*q)--;
       (*p)--;
-      if (nondet()) {
+      id56(id62()) {
         p = &y;
       }
-      if (nondet()) {
+      id56(id62()) {
         p = &x;
       }
     }
-    b = nondet();
+    b = id62();
   }
   return (0);
 }

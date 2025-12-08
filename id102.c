@@ -1,5 +1,5 @@
-int constant_loop_ok(int i, int j) {
-  for (i = 0; i < defined_const; i++)
-    j++;
-  return (j);
+void id102(int k1, int k2, int* x){
+  id56(k1 == k2) {
+    (*x)++;
+  }
 }

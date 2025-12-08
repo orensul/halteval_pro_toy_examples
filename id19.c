@@ -1,7 +1,7 @@
-void loop_conditional_bad(int y) {
+void id19(int y){
   int x = 0;
   while (y < 100)
-    if (y < 50)
+    id56(y < 50)
       x++;
     else
       y++;

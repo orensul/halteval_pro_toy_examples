@@ -1,4 +1,4 @@
-void var_goto_ok(int y) {
+void id18(int y){
   int x = 42;
   goto end;
   x++;

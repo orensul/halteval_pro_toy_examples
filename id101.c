@@ -1,10 +1,8 @@
-void goto_cross_loop_stop_at_5_bad() {
+void id101(){
   int i = 0;
-
-retry:
-  while (i < 10) {
-    if (i == 5)
-      goto retry;
-    i++;
+  int j = 0;
+  while (i < 1) {
+    i += j / 2;
+    j++;
   }
 }

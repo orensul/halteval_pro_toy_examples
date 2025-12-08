@@ -1,4 +1,4 @@
-void twovars_goto_bad(int y) {
+void id15(int y){
   int z = y;
   int x = 0;
 label:

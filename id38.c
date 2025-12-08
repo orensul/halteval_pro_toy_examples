@@ -1,4 +1,4 @@
-void FP_loop_signedarith_ok(int y) {
+void id38(int y){
   while (y > 0x7fffffff) {
     y++;
     y--;
