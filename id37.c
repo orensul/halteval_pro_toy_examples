@@ -1,7 +1,7 @@
 int id37(int x, int y){
 re:
   x++;
-  id56(y) {
+  if (y) {
     int z1 = x * 2;
     goto re;
     return (z1);

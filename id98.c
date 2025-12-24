@@ -3,7 +3,7 @@ void id98(){
 
 retry:
   while (i < 10) {
-    id56(i == 5)
+    if (i == 5)
       goto retry;
     i++;
   }

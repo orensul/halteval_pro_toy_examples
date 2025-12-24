@@ -3,7 +3,7 @@ void id90(int val){
   int i;
   int p = 0;
 
-  id56(val == 0)
+  if (val == 0)
     num = 1;
   else
     num = 10;

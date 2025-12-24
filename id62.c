@@ -1,37 +1,40 @@
+
+int id61();
+
 int id62(){
-  int x = id62();
-  int y = id62();
+  int x = id61();
+  int y = id61();
 
   int* p = &y;
   int* q = &x;
   int b = 1;
 
   while (x < 100 && 100 < y && b) {
-    id56(p == q) {
-      int k = id61(id62(), id62());
+    if (p == q) {
+      int k = id61(id61(), id61());
       (*p)++;
       while ((k--) > 100) {
-        id56(id62()) {
+        if (id61()) {
           p = &y;
         }
-        id56(id62()) {
+        if (id61()) {
           p = &x;
         }
-        id56(!b) {
+        if (!b) {
           k++;
         }
       }
     } else {
       (*q)--;
       (*p)--;
-      id56(id62()) {
+      if (id61()) {
         p = &y;
       }
-      id56(id62()) {
+      if (id61()) {
         p = &x;
       }
     }
-    b = id62();
+    b = id61();
   }
   return (0);
 }

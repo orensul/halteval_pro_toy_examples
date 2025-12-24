@@ -1,5 +1,7 @@
+int id62();
+
 void id71(int k, int i){
-  id56(k >= 0)
+  if (k >= 0)
     ;
   else
     i = -1;
