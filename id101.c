@@ -1,4 +1,4 @@
-void id104(){
+void id101(){
   int i = 0;
   int j = 0;
   while (i < 1) {
