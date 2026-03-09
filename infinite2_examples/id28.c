@@ -1,6 +1,10 @@
-void id28(int p, int b, int e)
-{
-  while (p != 1) {
-    p = (p * b) % e;
+void id28() {
+  int x = 7;
+  while (x > 0) {
+  restart:
+    x++;
+    if (x == 10)
+      goto restart;
+    x -= 2;
   }
 }

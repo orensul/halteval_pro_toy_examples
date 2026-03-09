@@ -3,7 +3,14 @@ typedef struct s_ent {
   struct s_ent *next;
 }	       ent_t;
 
-void id20(ent_t *ent) {
-  while (ent)
-    ent = ent->next;
+id19(*ent_t);
+
+void id21() {
+  ent_t one;
+  ent_t two;
+  one.val = 1;
+  one.next = &two;
+  two.val = 2;
+  two.next = 0;
+  id19(&one);
 }

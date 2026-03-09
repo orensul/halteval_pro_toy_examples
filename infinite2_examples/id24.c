@@ -1,5 +1,5 @@
 int id24(int x) {
-  if ((x % 2) == 0)
-    return id24(x + 1);
+  if (x < 100)
+    return id24(x + 2);
   return x;
 }

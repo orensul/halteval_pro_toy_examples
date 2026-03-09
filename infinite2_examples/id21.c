@@ -11,6 +11,6 @@ void id21() {
   one.val = 1;
   one.next = &two;
   two.val = 2;
-  two.next = 0;
+  two.next = &one;
   id19(&one);
 }

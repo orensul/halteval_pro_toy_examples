@@ -1,5 +1,6 @@
-int id26(int x) {
-  if (x < 100)
-    return id26(x + 2);
-  return x;
+void id26(int p, int b, int e)
+{
+  while (p != 1) {
+    p = (p * b) % e;
+  }
 }
