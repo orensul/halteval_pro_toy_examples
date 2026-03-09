@@ -1,6 +1,5 @@
-void id28() {
-  int x = 7;
-  while (x > 0) {
+void id28(int x) {
+  while (x != 0) {
   restart:
     x++;
     if (x == 10)

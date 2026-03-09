@@ -5,7 +5,7 @@ typedef struct s_ent {
 
 id19(*ent_t);
 
-void id21() {
+void id20() {
   ent_t one;
   ent_t two;
   one.val = 1;

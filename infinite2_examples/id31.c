@@ -1,9 +1,8 @@
-unsigned id31(const char *name) {
-  unsigned hashValue = 5381;
-  const char *ptr;
-
-  for (ptr = name; *ptr; ptr++)
-    hashValue = hashValue * 33 + *ptr;
-
-  return(hashValue);
+void id31() {
+  int y[10] = {0x00};
+  int i = 0;
+  while ((y[i] % 2) == 0) {
+    i = y[i] % 10;
+    y[i] += 2;
+  }
 }

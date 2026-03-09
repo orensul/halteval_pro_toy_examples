@@ -1,7 +1,5 @@
 int id23(int x) {
-  if (x > 50 && x < 100)
-    return id23(x + 4);
-  else
-    return id23(x + 2);
+  if ((x % 2) == 0)
+    return id23(x + 1);
   return x;
 }
