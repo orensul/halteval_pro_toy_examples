@@ -1,4 +1,4 @@
-id1(unsigned int);
+int id1(unsigned int);
 void id4(int x)
 {
   while (id1(x))
