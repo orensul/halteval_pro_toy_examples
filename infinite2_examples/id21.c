@@ -1,16 +1,16 @@
 typedef struct s_ent {
-  unsigned int val;
-  struct s_ent *next;
-}	       ent_t;
+    unsigned int val;
+    struct s_ent *next;
+} ent_t;
 
-id19(*ent_t);
+void id19(ent_t *param);
 
 void id21() {
-  ent_t one;
-  ent_t two;
-  one.val = 1;
-  one.next = &two;
-  two.val = 2;
-  two.next = &one;
-  id19(&one);
+    ent_t one;
+    ent_t two;
+    one.val = 1;
+    one.next = &two;
+    two.val = 2;
+    two.next = &one;
+    id19(&one);
 }
