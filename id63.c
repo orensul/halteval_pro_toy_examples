@@ -1,5 +1,6 @@
 int id62();
-
+int npc = 0;
+int nx, ny, nz;
 void id63(){
   int x = id62(), y = id62(), z = id62();
   if (y > 0) {
